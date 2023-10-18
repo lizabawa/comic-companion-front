@@ -18,7 +18,7 @@ import { RouterModule } from '@angular/router';
     NgbModule,
     RouterModule.forRoot([
       {
-        path:'home',
+        path:'',
         component: HomeComponent
       },
       {

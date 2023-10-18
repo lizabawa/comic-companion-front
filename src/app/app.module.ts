@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComicsComponent } from './comics/comics.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,17 @@ import { ComicsComponent } from './comics/comics.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    RouterModule.forRoot([
+      {
+        path:'home',
+        component: HomeComponent
+      },
+      {
+        path: 'comics',
+        component: ComicsComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

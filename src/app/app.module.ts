@@ -6,12 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComicsComponent } from './comics/comics.component';
 import { RouterModule } from '@angular/router';
+import { ComicsListComponent } from './comics-list/comics-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ComicsComponent
+    ComicsComponent,
+    ComicsListComponent
   ],
   imports: [
     BrowserModule,

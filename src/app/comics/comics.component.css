@@ -6,6 +6,13 @@
     margin-bottom: 3%;
 }
 
-.btn {
+.jumbotron .btn {
     margin-top: 5%;
+}
+
+#see-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
 }

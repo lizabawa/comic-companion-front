@@ -1,4 +1,21 @@
 #banner {
+    position: relative;
+}
+
+#banner::before {
+    content: "";
     background-image: url("src/assets/images/banner.png");
     background-size: cover;
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.banner-txt {
+    position: relative;
+    text-align: center;
 }

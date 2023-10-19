@@ -10,7 +10,6 @@ import { ActivatedRoute } from '@angular/router';
 export class ComicsListComponent implements OnInit{
   comics = comics
   comic: any;
-  title: string = "" //may not need title?
   idxEnd = 3;
 
   constructor(private route: ActivatedRoute) {
@@ -29,8 +28,8 @@ export class ComicsListComponent implements OnInit{
     this.route.paramMap
     .subscribe( params => {
       this.comic = comics.find( comic => {
-        let paramTitle: string = params.get('title') || ''
-        return comic.title
+        let paramId: string = params.get('id') || ''
+        return comic.id === parseInt(paramId)
       })
     })
   }

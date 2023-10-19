@@ -15,7 +15,7 @@ const routes: Routes = [
     component: ComicsComponent
   },
   {
-    path: 'comics/:title',
+    path: 'comics/:id',
     component: ComicComponent
   }
 ]

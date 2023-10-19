@@ -12,16 +12,15 @@ export class ComicsComponent implements OnInit {
 featured = featured;
 comics = comics;
 comic: any;
-title: string = "" //may not need title?
 
 constructor(private route: ActivatedRoute){}
 
-ngOnInit() {
+ngOnInit(){
   this.route.paramMap
   .subscribe( params => {
     this.comic = comics.find( comic => {
-      let paramTitle: string = params.get('title') || ''
-      return comic.title
+      let paramId: string = params.get('id') || ''
+      return comic.id === parseInt(paramId)
     })
   })
 }

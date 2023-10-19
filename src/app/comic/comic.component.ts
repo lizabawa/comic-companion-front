@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+// import { ActivatedRoute } from '@angular/router';
 // import { comics } from '../comics-list/comics';
 
 @Component({
@@ -6,6 +7,22 @@ import { Component } from '@angular/core';
   templateUrl: './comic.component.html',
   styleUrls: ['./comic.component.css']
 })
-export class ComicComponent {
+export class ComicComponent{
+
   // comics = comics;
+  // comic: any
+
+  // constructor(private route: ActivatedRoute) {
+    
+  // }
+
+  // ngOnInit(){
+  //   this.route.paramMap
+  //   .subscribe( params => {
+  //     this.comic = comics.find( comic => {
+  //       let paramId: string = params.get('id') || ''
+  //       return comic.id === parseInt(paramId)
+  //     })
+  //   })
+  // }
 }

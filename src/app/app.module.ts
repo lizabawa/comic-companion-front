@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComicsComponent } from './comics/comics.component';
-import { RouterModule } from '@angular/router';
 import { ComicsListComponent } from './comics-list/comics-list.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,16 +18,7 @@ import { ComicsListComponent } from './comics-list/comics-list.component';
   imports: [
     BrowserModule,
     NgbModule,
-    RouterModule.forRoot([
-      {
-        path:'',
-        component: HomeComponent
-      },
-      {
-        path: 'comics',
-        component: ComicsComponent
-      }
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

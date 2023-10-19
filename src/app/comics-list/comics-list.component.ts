@@ -26,7 +26,7 @@ export class ComicsListComponent implements OnInit{
 
     .subscribe(title => {
       console.log("comic viewed with title: " + title);
-      this.router.navigate(['./comics/:title']);
+      this.router.navigate(['./comics/:{{title}}']);
     })
   }
 }

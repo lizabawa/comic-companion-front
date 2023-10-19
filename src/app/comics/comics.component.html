@@ -1,9 +1,10 @@
 <!--JUMBOTRON-->
-<div class="jumbotron">
-    <h1 class="display-4">Featured Comic</h1>
-    <p class="lead">In the boundless abyss that predates existence, the Luminara Blossom sprouted and birthed the seeds of radiance, giving rise to Everdawn: the realm bathed in eternal light. The sanctity of the Luminara's presence was revered by all, drawing mages to unravel its mystical secrets and monarchs to harness its profound might.</p>
+<div class="jumbotron" style="background-image: url('{{featured[0].url}}');">
+    <h1 class="display-4"> {{ featured[0].title}} </h1>
+    <p class="lead"> {{ featured[0].description}} </p>
     <p class="lead">
-      <a class="btn btn-danger btn-lg" href="#" role="button">Read Now</a>
+      <!--READ NOW BUTTON-->
+      <a class="btn btn-danger btn-lg" routerLink="/comics/:title" role="button">Read Now</a>
     </p>
 </div>
 <!--COMICS DISPLAY SECTION-->

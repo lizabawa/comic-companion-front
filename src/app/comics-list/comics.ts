@@ -16,12 +16,12 @@ export const comics: Comics[] = [
         id: 2,
         title: 'Red Ranger',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!',
-        url: ('assets/images/mec-bros.png')
+        url: ('assets/images/red-ranger.png')
     },
     {
         id: 1,
         title: 'The Tale of Two Sisters',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!',
-        url: ('assets/images/mec-bros.png')
+        url: ('assets/images/two-sisters.png')
     }
 ]

@@ -19,7 +19,7 @@ export const comics: Comics[] = [
             },
             {
                 id: 1,
-                pageUrl: ('assets/images/mech-bros.png')
+                pageUrl: ('assets/images/two-sisters.png')
             }
         ]
     },
@@ -35,7 +35,7 @@ export const comics: Comics[] = [
             },
             {
                 id: 1,
-                pageUrl: ('assets/images/mech-bros.png')
+                pageUrl: ('assets/images/two-sisters.png')
             }
         ]
     },
@@ -51,7 +51,7 @@ export const comics: Comics[] = [
             },
             {
                 id: 1,
-                pageUrl: ('assets/images/mech-bros.png')
+                pageUrl: ('assets/images/two-sisters.png')
             }
         ]
     },
@@ -67,7 +67,7 @@ export const comics: Comics[] = [
             },
             {
                 id: 1,
-                pageUrl: ('assets/images/mech-bros.png')
+                pageUrl: ('assets/images/two-sisters.png')
             }
         ]
     },
@@ -83,7 +83,7 @@ export const comics: Comics[] = [
             },
             {
                 id: 1,
-                pageUrl: ('assets/images/mech-bros.png')
+                pageUrl: ('assets/images/two-sisters.png')
             }
         ]
     },
@@ -99,7 +99,7 @@ export const comics: Comics[] = [
             },
             {
                 id: 1,
-                pageUrl: ('assets/images/mech-bros.png')
+                pageUrl: ('assets/images/two-sisters.png')
             }
         ]
     },
@@ -115,7 +115,7 @@ export const comics: Comics[] = [
             },
             {
                 id: 1,
-                pageUrl: ('assets/images/mech-bros.png')
+                pageUrl: ('assets/images/two-sisters.png')
             }
         ]
     },
@@ -131,7 +131,7 @@ export const comics: Comics[] = [
             },
             {
                 id: 1,
-                pageUrl: ('assets/images/mech-bros.png')
+                pageUrl: ('assets/images/two-sisters.png')
             }
         ]
     },
@@ -147,7 +147,7 @@ export const comics: Comics[] = [
             },
             {
                 id: 1,
-                pageUrl: ('assets/images/mech-bros.png')
+                pageUrl: ('assets/images/two-sisters.png')
             }
         ]
     },

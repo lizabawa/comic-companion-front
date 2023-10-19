@@ -16,6 +16,8 @@ title: string = "" //may not need title?
 
 constructor(private route: ActivatedRoute){}
 
+seeMore(){}
+
 ngOnInit() {
   this.route.paramMap
   .subscribe( params => {

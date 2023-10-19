@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { comics } from './comics';
-import { Subject } from 'rxjs';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-comics-list',
@@ -10,23 +9,20 @@ import { Router } from '@angular/router';
 })
 export class ComicsListComponent implements OnInit{
   comics = comics
+  comic: any;
   title: string = ""
-  getComic = new Subject();
 
-  viewComic(title: string) {
-    this.getComic.next(title)
-  }
-
-  constructor(private router: Router) {
+  constructor(private route: ActivatedRoute) {
     
   }
 
-  ngOnInit(): void {
-    this.getComic
-
-    .subscribe(title => {
-      console.log("comic viewed with title: " + title);
-      this.router.navigate(['./comics/:{{title}}']);
-    })
+  ngOnInit(){
+    this.route.paramMap
+    .subscribe( params => {
+      this.comic = comics.find( comic => {
+        let paramTitle: string = params.get('title') || ''
+        return comic.title
+      })
+    } )
   }
 }

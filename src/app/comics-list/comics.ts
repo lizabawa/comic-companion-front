@@ -1,5 +1,5 @@
 interface Comics {
-    id: any,
+    id: number,
     title: string,
     description: string
     url: any

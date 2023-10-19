@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { comics } from './comics';
 import { Subject } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-comics-list',
@@ -9,20 +10,23 @@ import { Subject } from 'rxjs';
 })
 export class ComicsListComponent implements OnInit{
   comics = comics
-  id: any
+  title: string = ""
   getComic = new Subject();
 
-  viewComic(id: any) {
-    // console.log("comic viewed with ID: " + id);
-    this.getComic.next(id)
-    //retrieve the link to open
+  viewComic(title: string) {
+    this.getComic.next(title)
+  }
+
+  constructor(private router: Router) {
+    
   }
 
   ngOnInit(): void {
     this.getComic
 
-    .subscribe(id => {
-      console.log("comic viewed with ID: " + id);
+    .subscribe(title => {
+      console.log("comic viewed with title: " + title);
+      this.router.navigate(['./comics/:title']);
     })
   }
 }

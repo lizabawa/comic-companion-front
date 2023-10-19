@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-4" *ngFor="let comic of comics" [ngClass]="comic.id" (click)="viewComic(comic.id)">
+        <div class="col-md-4" *ngFor="let comic of comics" [ngClass]="comic.title" (click)="viewComic(comic.title)">
             <img src="{{ comic.url }}">
             <h4> {{ comic.title }} </h4>
             <p> {{ comic.description }} </p>

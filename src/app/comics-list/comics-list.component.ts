@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ComicsListComponent implements OnInit{
   comics = comics
   comic: any;
-  title: string = ""
+  title: string = "" //may not need title?
 
   constructor(private route: ActivatedRoute) {
     
@@ -23,6 +23,6 @@ export class ComicsListComponent implements OnInit{
         let paramTitle: string = params.get('title') || ''
         return comic.title
       })
-    } )
+    })
   }
 }

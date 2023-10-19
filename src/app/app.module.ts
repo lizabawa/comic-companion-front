@@ -7,15 +7,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComicsComponent } from './comics/comics.component';
 import { ComicsListComponent } from './comics-list/comics-list.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ComicComponent } from './comic/comic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ComicsComponent,
-    ComicsListComponent,
-    ComicComponent
+    ComicsListComponent
   ],
   imports: [
     BrowserModule,

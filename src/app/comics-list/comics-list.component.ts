@@ -11,9 +11,18 @@ export class ComicsListComponent implements OnInit{
   comics = comics
   comic: any;
   title: string = "" //may not need title?
+  idxEnd = 3;
 
   constructor(private route: ActivatedRoute) {
     
+  }
+  seeMore(){
+    if (this.idxEnd <= comics.length - 3){
+    comics.slice(0, this.idxEnd += 3)
+    console.log("start: 0" + " end: " + this.idxEnd)
+    } else {    
+      console.log("end of array")
+    }
   }
 
   ngOnInit(){

@@ -13,10 +13,15 @@ featured = featured;
 comics = comics;
 comic: any;
 title: string = "" //may not need title?
+// idxStart = 0;
+// idxEnd = 3;
 
 constructor(private route: ActivatedRoute){}
 
-seeMore(){}
+// seeMore(){
+//   comics.slice(this.idxStart += 3, this.idxEnd += 3)
+//   console.log("start: " + this.idxStart + " end: " + this.idxEnd)
+// }
 
 ngOnInit() {
   this.route.paramMap

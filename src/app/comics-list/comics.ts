@@ -42,4 +42,22 @@ export const comics: Comics[] = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!',
         url: ('assets/images/two-sisters.png')
     },
+    {
+        id: 6,
+        title: 'Comic 7',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!',
+        url: ('assets/images/two-sisters.png')
+    },
+    {
+        id: 7,
+        title: 'Comic 8',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!',
+        url: ('assets/images/two-sisters.png')
+    },
+    {
+        id: 8,
+        title: 'Comic 9',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!',
+        url: ('assets/images/two-sisters.png')
+    },
 ]

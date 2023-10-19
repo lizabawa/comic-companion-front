@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { comics } from '../comics-list/comics';
 
 @Component({
   selector: 'app-comic',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./comic.component.css']
 })
 export class ComicComponent {
-
+  // comics = comics;
 }

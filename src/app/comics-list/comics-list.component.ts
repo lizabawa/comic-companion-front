@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { comics } from './comics';
 
 @Component({
@@ -6,6 +6,15 @@ import { comics } from './comics';
   templateUrl: './comics-list.component.html',
   styleUrls: ['./comics-list.component.css']
 })
-export class ComicsListComponent {
+export class ComicsListComponent implements OnInit{
   comics = comics
+  id: any
+
+  viewComic(id: any) {
+    console.log("comic viewed with ID: " + id);
+  }
+
+  ngOnInit(): void {
+      
+  }
 }

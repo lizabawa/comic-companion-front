@@ -1,11 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <img src="assets/images/renowned.png">
+            <img src=" {{ comics[this.comic.id].url }} ">
         </div>
         <div class="col">
-            <h1>Comic Title</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum similique quae esse vitae nostrum tenetur? Tenetur, odit? Ea sint temporibus, iste reiciendis voluptatibus neque esse culpa, aspernatur pariatur, debitis natus.</p>
+            <h1> {{ comics[this.comic.id].title }} </h1>
+            <p> {{ comics[this.comic.id].description }} </p>
         </div>
     </div>
 </div>

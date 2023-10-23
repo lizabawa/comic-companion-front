@@ -19,10 +19,10 @@ export class ComicsListComponent implements OnInit{
     
   }
   showNewRow(){
-    return this.webReqService.getAllComics('comics').subscribe((response: any) => {
-      this.comicList = JSON.stringify(response);
-      console.log("this is the response" + this.comicList);
-    })
+    // return this.webReqService.getAllComics('comics').subscribe((response: any) => {
+    //   this.comicList = JSON.stringify(response);
+    //   console.log("this is the response" + this.comicList);
+    // })
 
     // if (this.idxEnd <= comics.length - 3){
     // comics.slice(0, this.idxEnd += 3)
@@ -34,8 +34,9 @@ export class ComicsListComponent implements OnInit{
 
   ngOnInit(){
     this.webReqService.getAllComics('comics').subscribe((response: any) => {
-      this.comicList = JSON.stringify(response);
-      console.log("this is the response" + this.comicList);
+      this.comicList = response.data;
+      // console.log("this is the response" + JSON.stringify(this.comicList));
+      console.log(response.data);
 
       this.route.paramMap
     .subscribe( params => {

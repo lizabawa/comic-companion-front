@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { comics } from './comics';
 import { ActivatedRoute } from '@angular/router';
 import { ComicsListService } from './comics-list.service';
+import { WebRequestService } from '../web-request.service';
 
 @Component({
   selector: 'app-comics-list',
@@ -14,11 +15,11 @@ export class ComicsListComponent implements OnInit{
   comic: any;
   idxEnd = 3;
 
-  constructor(private route: ActivatedRoute, private comicsListService: ComicsListService) {
+  constructor(private route: ActivatedRoute, private webReqService: WebRequestService) {
     
   }
   showNewRow(){
-    return this.comicsListService.seeMore().subscribe((response: any) => {
+    return this.webReqService.getAllComics('comics').subscribe((response: any) => {
       this.comicList = response;
       console.log("this is the response" + this.comicList);
     })

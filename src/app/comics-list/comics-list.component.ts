@@ -20,7 +20,7 @@ export class ComicsListComponent implements OnInit{
   }
   showNewRow(){
     return this.webReqService.getAllComics('comics').subscribe((response: any) => {
-      this.comicList = response;
+      this.comicList = JSON.stringify(response);
       console.log("this is the response" + this.comicList);
     })
 

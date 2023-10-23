@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-4" *ngFor="let comic of comicList">
+        <div class="col-md-4" *ngFor="let comic of comicList.slice(0, this.idxEnd)">
             <img src="{{ comic.url }}">
             <h4><a routerLink="/comics/{{comic.id}}"> {{ comic.title }} </a></h4>
             <p> {{ comic.description}} </p>

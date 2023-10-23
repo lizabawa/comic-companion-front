@@ -10,7 +10,7 @@ import { WebRequestService } from '../web-request.service';
   styleUrls: ['./comics-list.component.css']
 })
 export class ComicsListComponent implements OnInit{
-  comics = comics
+  // comics = comics
   comicList: any;
   comic: any;
   idxEnd = 3;
@@ -33,12 +33,17 @@ export class ComicsListComponent implements OnInit{
   }
 
   ngOnInit(){
-    this.route.paramMap
+    this.webReqService.getAllComics('comics').subscribe((response: any) => {
+      this.comicList = JSON.stringify(response);
+      console.log("this is the response" + this.comicList);
+
+      this.route.paramMap
     .subscribe( params => {
-      this.comic = comics.find( comic => {
-        let paramId: string = params.get('id') || ''
+      this.comic = this.comicList.find( (comic: any) => {
+        let paramId: string = params.get('id') || '';
         return comic.id === parseInt(paramId)
       })
+    })
     })
   }
 }

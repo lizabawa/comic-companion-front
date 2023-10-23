@@ -14,4 +14,8 @@ export class WebRequestService {
   getAllComics(uri: string) {
     return this.http.get(`${this.ROOT_URL}/${uri}`);
   }
+
+  getComic(uri: string, id: number) {
+    return this.http.get(`${this.ROOT_URL}/${uri}/${id}`)
+  }
 }

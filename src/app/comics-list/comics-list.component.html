@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-4" *ngFor="let comic of comics.slice(0, this.idxEnd)">
-            <img src="{{ comic.url }}">
-            <h4><a routerLink="/comics/{{comic.id}}"> {{ comic.title }} </a></h4>
-            <p> {{ comic.description }} </p>
+        <div class="col-md-4" *ngFor="let comic of comicList | keyvalue">
+            <!-- <img src="{{ comic.url }}">
+            <h4><a routerLink="/comics/{{comic.id}}"> {{ comic.title }} </a></h4> -->
+            <p> {{ comic.key }}:{{comic.value}} </p>
         </div>
     </div>
 </div>

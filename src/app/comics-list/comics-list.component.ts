@@ -10,6 +10,7 @@ import { ComicsListService } from './comics-list.service';
 })
 export class ComicsListComponent implements OnInit{
   comics = comics
+  comicList: any;
   comic: any;
   idxEnd = 3;
 
@@ -18,7 +19,8 @@ export class ComicsListComponent implements OnInit{
   }
   showNewRow(){
     return this.comicsListService.seeMore().subscribe((response: any) => {
-      console.log("this is the response" + response);
+      this.comicList = response;
+      console.log("this is the response" + this.comicList);
     })
 
     // if (this.idxEnd <= comics.length - 3){

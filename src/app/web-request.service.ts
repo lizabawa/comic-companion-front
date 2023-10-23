@@ -11,7 +11,7 @@ export class WebRequestService {
     this.ROOT_URL = 'http://localhost:9000/api/v1';
    }
 
-  get(uri: string) {
+  getAllComics(uri: string) {
     return this.http.get(`${this.ROOT_URL}/${uri}`);
   }
 }

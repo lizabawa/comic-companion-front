@@ -9,6 +9,6 @@ export class ComicsListService {
 
   seeMore() {
     // send a web request to get more comic titles and descriptions
-    return this.webReqService.get('comics');
+    return this.webReqService.getAllComics('comics');
   }
 }

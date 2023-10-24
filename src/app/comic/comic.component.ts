@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { comics } from '../comics-list/comics';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgFor } from '@angular/common';
+import { WebRequestService } from '../web-request.service';
 
 @Component({
   selector: 'app-comic',
@@ -21,20 +22,26 @@ export class ComicComponent implements OnInit{
     "assets/images/red-ranger.png"
   ]
 
-  comics = comics;
+  comicList: any
+  // comics = comics;
   comic: any
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private webReqService: WebRequestService) {
     
   }
 
   ngOnInit(){
+    this.webReqService.getAllComics('comics').subscribe((response: any) => {
+      this.comicList = response.data;
+      console.log(response.data);
+
     this.route.paramMap
     .subscribe( params => {
-      this.comic = comics.find( comic => {
-        let paramId: string = params.get('id') || ''
+      this.comic = this.comicList.find( (comic: any) => {
+        let paramId: string = params.get('id') || '';
         return comic.id === parseInt(paramId)
       })
+    })
     })
   }
 }

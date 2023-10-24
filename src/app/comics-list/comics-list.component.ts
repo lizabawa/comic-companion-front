@@ -30,6 +30,8 @@ export class ComicsListComponent implements OnInit{
       this.comicList = response.data;
       console.log(response.data);
       console.log(response.data[1].url)
+      console.log(response.data[0].description)
+
 
     this.route.paramMap
     .subscribe( params => {

@@ -1,10 +1,11 @@
 <!--JUMBOTRON-->
-<div class="jumbotron" style="background-image: url('{{featured[0].url}}');">
-    <h1 class="display-4"> {{ featured[0].title}} </h1>
-    <p class="lead"> {{ featured[0].description}} </p>
+<!--IN ORDER TO CHANGE FEATURED COMIC, CHANGE THE comicList INDEX-->
+<div class="jumbotron" style="background-image: url('{{comicList[0].url}}');">
+    <h1 class="display-4"> {{ comicList[0].title}} </h1>
+    <p class="lead"> {{ comicList[0].description}} </p>
     <p class="lead">
       <!--READ NOW BUTTON-->
-      <a class="btn btn-danger btn-lg" routerLink="/comics/{{featured[0].id}}" role="button">Read Now</a>
+      <a class="btn btn-danger btn-lg" routerLink="/comics/{{comicList[0].id}}" role="button">Read Now</a>
     </p>
 </div>
 <!--COMICS DISPLAY SECTION-->

@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { comics } from '../comics-list/comics';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgFor } from '@angular/common';
 import { WebRequestService } from '../web-request.service';
@@ -23,7 +22,6 @@ export class ComicComponent implements OnInit{
   ]
 
   comicList: any
-  // comics = comics;
   comic: any
 
   constructor(private route: ActivatedRoute, private webReqService: WebRequestService) {
@@ -45,3 +43,6 @@ export class ComicComponent implements OnInit{
     })
   }
 }
+
+//TODO read now routing
+//TODO images not showing

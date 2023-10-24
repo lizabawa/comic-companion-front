@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { featured } from './featured-comic';
-import { comics } from '../comics-list/comics';
 import { ActivatedRoute } from '@angular/router';
+import { WebRequestService } from '../web-request.service';
 
 @Component({
   selector: 'app-comics',
@@ -10,18 +10,26 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ComicsComponent implements OnInit {
 featured = featured;
-comics = comics;
+comicList: any;
 comic: any;
 
-constructor(private route: ActivatedRoute){}
+constructor(private route: ActivatedRoute, private webReqService: WebRequestService){}
 
 ngOnInit(){
+  this.webReqService.getAllComics('comics').subscribe((response: any) => {
+    this.comicList = response.data;
+    console.log(response.data);
+    console.log(response.data[1].url)
+    console.log(response.data[0].description)
+
+
   this.route.paramMap
   .subscribe( params => {
-    this.comic = comics.find( comic => {
-      let paramId: string = params.get('id') || ''
+    this.comic = this.comicList.find( (comic: any) => {
+      let paramId: string = params.get('id') || '';
       return comic.id === parseInt(paramId)
     })
+  })
   })
 }
 }

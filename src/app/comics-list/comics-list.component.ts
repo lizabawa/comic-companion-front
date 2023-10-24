@@ -28,9 +28,9 @@ export class ComicsListComponent implements OnInit{
   ngOnInit(){
     this.webReqService.getAllComics('comics').subscribe((response: any) => {
       this.comicList = response.data;
-      console.log(response.data);
-      console.log(response.data[1].url)
-      console.log(response.data[0].description)
+      // console.log(response.data);
+      // console.log(response.data[1].url)
+      // console.log(response.data[0].description)
 
 
     this.route.paramMap

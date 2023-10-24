@@ -1,13 +1,13 @@
 <div class="container">
-    <div class="row">
+    <div class="row" *ngIf="comicList" >
         <div class="col-md-4" *ngFor="let comic of comicList.slice(0, this.idxEnd)">
-            <img src="{{ comic.url }}">
+            <img src="{{ comic.url }}" alt="comic">
             <h4><a routerLink="/comics/{{comic.id}}"> {{ comic.title }} </a></h4>
-            <p> {{ comic.description}} </p>
+            <p> {{ comic.description }} </p>
         </div>
     </div>
 </div>
 <!--SEE MORE BUTTON-->
 <div id="see-more">
-    <button class="btn btn-light btn-lg" type="button" (click)="showNewRow()">See More</button>
+    <button class="btn btn-light btn-lg" type="button" (click)="seeMore()">See More</button>
 </div>

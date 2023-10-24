@@ -12,14 +12,6 @@ import { WebRequestService } from '../web-request.service';
   styleUrls: ['./comic.component.css']
 })
 export class ComicComponent implements OnInit{
-  images = [
-    "assets/images/mech-bros.png",
-    "assets/images/red-ranger.png",
-    "assets/images/mech-bros.png",
-    "assets/images/red-ranger.png",
-    "assets/images/mech-bros.png",
-    "assets/images/red-ranger.png"
-  ]
 
   comicList: any
   comic: any
@@ -31,7 +23,9 @@ export class ComicComponent implements OnInit{
   ngOnInit(){
     this.webReqService.getAllComics('comics').subscribe((response: any) => {
       this.comicList = response.data;
-      console.log(response.data);
+      // console.log(response.data[0].page[0].url)
+      // console.log(response.data[0].page);
+
 
     this.route.paramMap
     .subscribe( params => {
@@ -45,4 +39,3 @@ export class ComicComponent implements OnInit{
 }
 
 //TODO read now routing
-//TODO images not showing

@@ -18,4 +18,8 @@ export class WebRequestService {
   getComic(uri: string, id: number) {
     return this.http.get(`${this.ROOT_URL}/${uri}/${id}`)
   }
+
+  getComicPage(comics: string, id: number, pages: string) {
+    return this.http.get(`${this.ROOT_URL}/${comics}/${id}/${pages}`)
+  }
 }

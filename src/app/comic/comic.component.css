@@ -2,18 +2,21 @@
     padding: 70px;
 }
 
-#comic-img {
-    height: 500px;
-}
-
-ngb-carousel {
-    height: 800px;
-    background-color: gray;
+#indiv-comic-img {
+    height: 400px;
 }
 
 #carousel-img {
     height:800px;
 }
+
+/* .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+} */
 
 .carousel-caption {
     -webkit-text-fill-color: black;
@@ -25,15 +28,3 @@ ngb-carousel {
         -0.07em 0 white,
         0 -0.07em white;
 }
-
-/* .carousel-caption::before {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: grey;
-    opacity: 75%;
-} */

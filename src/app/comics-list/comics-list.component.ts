@@ -15,13 +15,16 @@ export class ComicsListComponent implements OnInit{
   constructor(private route: ActivatedRoute, private webReqService: WebRequestService) {
     
   }
+
   seeMore(){
     if (this.idxEnd <= this.comicList.length - 3){
     this.comicList.slice(0, this.idxEnd += 3)
     console.log("start: 0" + " end: " + this.idxEnd)
     } else {    
-      alert("No more comics to display")
-      console.log("No more comics to display")
+      const noMoreMsg = document.getElementById("noMoreMsg");
+      if (noMoreMsg) {
+        noMoreMsg.textContent = "No more comics to display";
+      }
     }
   }
 

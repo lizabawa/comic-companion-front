@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    margin-top: 4%;
+    padding-top: 8%;
+}
+
+#about-me {
+    font-size: 20px;
+    padding: 5% 10% 3%;
+}
+
+#signature {
+    padding-left: 120px;
+    padding-bottom: 100px;
+}
+
+.container {
+    background-image: url("../../assets/images/renowned.png");
+    background-size: cover;
+    background-color: rgba(235, 255, 236, 0.704); /* You can adjust the opacity here (0.5 means 50% opacity) */
+    background-blend-mode: overlay;
+    margin: 2%;
+}

@@ -4,11 +4,11 @@
     border-radius: 50%;
 }
 
-/* #navbar {
-    background-color: blue;
-    color: blue;
-} */
+#navbar {
+    background-color: rgb(189, 189, 189);
+}
 
 #navbarNav {
     padding-left: 30px;
+    text-align: right;
 }

@@ -4,8 +4,20 @@
     text-align: center;
     padding: 10% 10%;
     margin-bottom: 3%;
+    background-color: rgba(235, 255, 236, 0.491); /* You can adjust the opacity here (0.5 means 50% opacity) */
+    background-blend-mode: overlay;
 }
 
 .jumbotron .btn {
     margin-top: 5%;
 }
+
+#comic-title {
+    -webkit-text-fill-color: black;
+    text-shadow:
+        0.07em 0 white,
+        0 0.07em white,
+        -0.07em 0 white,
+        0 -0.07em white;
+}
+

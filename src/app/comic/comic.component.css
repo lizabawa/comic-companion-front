@@ -14,3 +14,26 @@ ngb-carousel {
 #carousel-img {
     height:800px;
 }
+
+.carousel-caption {
+    -webkit-text-fill-color: black;
+    font-size: 30px;
+    border-radius: 20px;
+    text-shadow:
+        0.07em 0 white,
+        0 0.07em white,
+        -0.07em 0 white,
+        0 -0.07em white;
+}
+
+/* .carousel-caption::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: grey;
+    opacity: 75%;
+} */

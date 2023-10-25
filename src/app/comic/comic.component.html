@@ -16,6 +16,7 @@
 >
   <ng-template ngbSlide *ngFor="let page of comic.page; index as i">
       <div class="carousel-caption">
+        page {{page.pageNumber}} of {{comic.page.length}}
       </div>
       <a>
           <div class="picsum-img-wrapper">

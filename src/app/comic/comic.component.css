@@ -1,14 +1,24 @@
 .container {
-    padding: 70px;
+    padding: 1%;
+}
+
+.col {
+    margin: 2%;
+}
+
+.row {
+    margin: 2%;
+    border: solid;
 }
 
 #indiv-comic-img {
     height: 400px;
 }
 
-/* #carousel-img {
-    max-height:50%;
-} */
+#carousel-img {
+    padding: 20px;
+
+}
 
 ::ng-deep .carousel-control-prev-icon {
     /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; */

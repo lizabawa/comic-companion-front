@@ -8,20 +8,21 @@
             <p> {{ comic.description }} </p>
         </div>
     </div>
+    <div class="row">
+        <ngb-carousel
+          #carousel
+          [interval]="0"
+        >
+          <ng-template ngbSlide *ngFor="let page of comic.page; index as i">
+              <div class="carousel-caption">
+                page {{page.pageNumber}} of {{comic.page.length}}
+              </div>
+              <a>
+                  <div class="picsum-img-wrapper">
+                      <img class="d-block w-100" src="{{page.url}}" alt="My image {{i + 1}} description" id="carousel-img"/>
+                  </div>
+              </a>
+          </ng-template>
+        </ngb-carousel>
+        </div>
 </div>
-
-<ngb-carousel
-  #carousel
-  [interval]="0"
->
-  <ng-template ngbSlide *ngFor="let page of comic.page; index as i">
-      <div class="carousel-caption">
-        page {{page.pageNumber}} of {{comic.page.length}}
-      </div>
-      <a>
-          <div class="picsum-img-wrapper">
-              <img class="d-block w-100" src="{{page.url}}" alt="My image {{i + 1}} description" id="carousel-img"/>
-          </div>
-      </a>
-  </ng-template>
-</ngb-carousel>

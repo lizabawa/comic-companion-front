@@ -1,9 +1,13 @@
 #logo {
     width: 70px;
-    padding-left: 15px;
+    margin-left: 15px;
 }
 
 /* #navbar {
     background-color: blue;
     color: blue;
 } */
+
+#navbarNav {
+    padding-left: 15px;
+}

@@ -7,8 +7,11 @@
 }
 
 .row {
-    margin: 2%;
-    border: solid;
+    margin: 3%;
+}
+
+#comic-details {
+    border: solid 2px;
 }
 
 #indiv-comic-img {

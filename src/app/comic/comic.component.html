@@ -12,6 +12,7 @@
         <ngb-carousel
           #carousel
           [interval]="0"
+          id="carousel"
         >
           <ng-template ngbSlide *ngFor="let page of comic.page; index as i">
               <div class="carousel-caption">
@@ -25,4 +26,7 @@
           </ng-template>
         </ngb-carousel>
         </div>
+</div>
+<div>
+    <button (click)="returntoCarouselTop()">Back to Carousel Top</button>
 </div>

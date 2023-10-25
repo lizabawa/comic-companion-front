@@ -19,6 +19,10 @@ export class ComicComponent implements OnInit{
   constructor(private route: ActivatedRoute, private webReqService: WebRequestService) {
     
   }
+  
+  returntoCarouselTop() {
+    window.scrollTo(50, 600)
+  }
 
   ngOnInit(){
     this.webReqService.getAllComics('comics').subscribe((response: any) => {

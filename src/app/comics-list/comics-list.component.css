@@ -20,5 +20,12 @@ h4, p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+}
+
+#noMoreMsg {
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 4%;
 }

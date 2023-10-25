@@ -8,13 +8,15 @@ import { ComicsComponent } from './comics/comics.component';
 import { ComicsListComponent } from './comics-list/comics-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ComicsComponent,
-    ComicsListComponent
+    ComicsListComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

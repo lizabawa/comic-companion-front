@@ -1,25 +1,25 @@
 # COMICCOMPANION
 
 ## Project Description
-ComicCompanion is the portfolio website for a comic artist to display their work where users can come and read
+ComicCompanion is a mock portfolio website for a comic artist to display their work where users can come and read the artists comics. This is the front-end for the application.
+
+[Backend API](https://github.com/lizabawa/comic-companion-backend)
 
 
 ## Table of Contents
 - [Project Approach](#project-approach)
-- [Entity-Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
+- [User Stories](#user-stories)
 - [Tools and Technologies Used](#tools-and-technologies-used)
 - [Hurdles Encountered During Development](#hurdles-encountered-during-development)
 - [Resources & Acknowledgements](#resources--acknowledgements)
 
 ## Project Approach 
+- I used a project management application called Notion to keep track of project tasks, important links, and brainstorming ideas.
+- My approach to the project was the create a bare bone front end first, then the backend, and then connect the two.
+- Before I began any coding, I planned my front-end out by creating a wireframe and user stories.
 
 
-
-### User-Centric Design
-
-
- 
-### Entity-Relationship Diagram (ERD)
+### User Stories
 
 
 ## Tools and Technologies Used
@@ -45,7 +45,7 @@ These tools and technologies were integral in delivering a high-quality, user-fr
 - Leonardo Rodriguez: [GitHub](https://github.com/LRodriguez92)
 
 ### Resources
-These are resources that were pivotal in debugging my code
+These are the resources that were pivotal in debugging my code.
 - [Stackoverflow](https://stackoverflow.com/)
 - [ChatGPT](https://chat.openai.com/)
 - [Angular](https://angular.io/)

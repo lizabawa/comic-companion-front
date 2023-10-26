@@ -45,18 +45,24 @@ ComicCompanion is a mock portfolio website for a comic artist to display their w
 </details>
 
 ### Wireframe
-
+- Landing Page
+![Landing Page Wireframe](https://github.com/lizabawa/comic-companion-front/blob/main/src/assets/wireframes/landing-wireframe.png?raw=true)
+- Comic List Page
+![Comic List Page Wireframe](https://github.com/lizabawa/comic-companion-front/blob/main/src/assets/wireframes/comic-list-wireframe.png?raw=true)
+- Individual Comic Page
+![Individual Comic Page Wireframe](https://github.com/lizabawa/comic-companion-front/blob/main/src/assets/wireframes/indiv-comic-wireframe.png?raw=true)
 
 ## Tools and Technologies Used
 
 The following is a list of the tools and technologies that were employed in the development of this project:
- - **VS Code:** The code editor of choice, offering robust features for debugging and source code editing.
+ - **[VS Code](https://code.visualstudio.com/):** The code editor of choice, offering robust features for debugging and source code editing.
  - **HTML:** Utilized for creating the basic structure of the web application.
  - **CSS:** Employed for styling the HTML elements and improving the overall user interface.
- - **Angular:** A framework for building dynamic web applications, used to create a scalable and maintainable codebase.
- - **Bootstrap:** A CSS framework for rapidly developing responsive and mobile-first web layouts.
+ - **[Angular](https://angular.io/):** A framework for building dynamic web applications, used to create a scalable and maintainable codebase.
+ - **[Bootstrap](https://getbootstrap.com/):** A CSS framework for rapidly developing responsive and mobile-first web layouts.
 These tools and technologies were integral in delivering a high-quality, user-friendly application.
-- **GitHub:** Version control and collaboration platform.
+- **[GitHub](https://github.com/):** Version control and collaboration platform.
+- **[Canva](https://www.canva.com/):** Used for designing the wireframes.
 
 
 ## Hurdles Encountered During Development
@@ -75,4 +81,4 @@ These are the resources that were pivotal in debugging my code.
 - [ChatGPT](https://chat.openai.com/)
 - [Angular](https://angular.io/)
 - [NG Bootstrap](https://ng-bootstrap.github.io/#/home)
-- [Devstackr](https://www.youtube.com/watch?v=185uAxYz1dU)
+- [Devstackr Youtube Video](https://www.youtube.com/watch?v=185uAxYz1dU)

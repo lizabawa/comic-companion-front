@@ -42,3 +42,9 @@
         -0.07em 0 white,
         0 -0.07em white;
 }
+
+#returnCarouselTopBtn {
+    float: right;
+    margin-right: 8%;
+    margin-bottom: 8%;
+}

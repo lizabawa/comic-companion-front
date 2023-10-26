@@ -66,7 +66,9 @@ These tools and technologies were integral in delivering a high-quality, user-fr
 
 
 ## Hurdles Encountered During Development
-
+- The logic behind the "See More" button was challenging but taking the time to think through the problem and write the steps down enabled me to figure out the solution. I initially had the logic working before I had created the backend, so once I implemented the backend API, I had to refactor the code to pull the data from the backend.
+- I encountered various challenges with CSS and sought guidance primarily from reliable resources such as StackOverflow, ChatGPT, and W3 Schools to help me navigate the complexities of the language. Some CSS challenges were getting my navbar items to line up the way I wanted, getting the "page x of y" to display over the comic pages and still be seen clearly, having the carousel arrows be seen so the user knows where to click for previous/next page.
+- I had a hurdle with my images (which pulled from the backend) not displaying on the frontend. I noted that the images displayed properly if I used the URL within the frontend assets/images, and pinpointed the issue was from the backend image urls. I ended up using the backend github image url's; however, there was a point during troubleshooting where I had used this url and the issue persisted. Ultimately, I learned that since I had updated the URL in the backend, I had to refresh my localhost in order for the image to display properly on the frontend.
 
 
 ## Resources & Acknowledgements
@@ -79,6 +81,7 @@ These tools and technologies were integral in delivering a high-quality, user-fr
 These are the resources that were pivotal in debugging my code.
 - [Stackoverflow](https://stackoverflow.com/)
 - [ChatGPT](https://chat.openai.com/)
-- [Angular](https://angular.io/)
+- [W3 Schools](https://www.w3schools.com/)
+- [Angular Documentation](https://angular.io/)
 - [NG Bootstrap](https://ng-bootstrap.github.io/#/home)
 - [Devstackr Youtube Video](https://www.youtube.com/watch?v=185uAxYz1dU)

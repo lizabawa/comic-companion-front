@@ -9,14 +9,16 @@ ComicCompanion is a mock portfolio website for a comic artist to display their w
 ## Table of Contents
 - [Project Approach](#project-approach)
 - [User Stories](#user-stories)
+- [Wireframes](#wireframes)
 - [Tools and Technologies Used](#tools-and-technologies-used)
 - [Hurdles Encountered During Development](#hurdles-encountered-during-development)
+- [Notable Features](#notable-features)
 - [Resources & Acknowledgements](#resources--acknowledgements)
 
 ## Project Approach 
-- I used the project management application [Notion](https://www.notion.so/) to keep track of project tasks, important links, and brainstorming ideas.
-- My approach to this project was to create a bare bone front end first, then the backend, and then connect the two before completing any additional CSS.
-- Before I began any coding, I planned my front-end out by creating a wireframe and user stories.
+- I used the project management application [Notion](https://www.notion.so/) to keep track of project tasks, important links, and brainstorming ideas
+- My approach to this project was to create a bare bone front end first, then the backend, and then connect the two before completing any additional CSS
+- Before I began any coding, I planned my front-end out by creating a wireframe and user stories
 
 
 ### User Stories
@@ -44,7 +46,7 @@ ComicCompanion is a mock portfolio website for a comic artist to display their w
 - As a User, I should be able to click on the back to the carousel top button and be redirected back to the top of the carousel
 </details>
 
-### Wireframe
+### Wireframes
 - Landing Page
 ![Landing Page Wireframe](https://github.com/lizabawa/comic-companion-front/blob/main/src/assets/wireframes/landing-wireframe.png?raw=true)
 - Comic List Page
@@ -70,6 +72,11 @@ These tools and technologies were integral in delivering a high-quality, user-fr
 - I encountered various challenges with CSS and sought guidance primarily from reliable resources such as StackOverflow, ChatGPT, and W3 Schools to help me navigate the complexities of the language. Some CSS challenges were getting my navbar items to line up the way I wanted, getting the "page x of y" to display over the comic pages and still be seen clearly, having the carousel arrows be seen so the user knows where to click for previous/next page.
 - I had a hurdle with my images (which pulled from the backend) not displaying on the frontend. I noted that the images displayed properly if I used the URL within the frontend assets/images, and pinpointed the issue was from the backend image urls. I ended up using the backend github image url's; however, there was a point during troubleshooting where I had used this url and the issue persisted. Ultimately, I learned that since I had updated the URL in the backend, I had to refresh my localhost in order for the image to display properly on the frontend.
 
+## Notable Features
+- See More button will continue to display comic books until there are none left to show, at which point an error will be displayed
+- A transparent background behind the carousel arrows that indicate to the user where they can click to go to the previous/next comic page
+- Comic page dynamically tells you what page of the comic you are on
+- Back to Carousel Top button 
 
 ## Resources & Acknowledgements
 ### General Assembly Instructors

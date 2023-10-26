@@ -1,5 +1,6 @@
 <div class="container">
     <div class="row" *ngIf="comicList" >
+        <!--DISPLAYS THREE COMICS AT A TIME FROM THE LIST-->
         <div class="col-md-4" *ngFor="let comic of comicList.slice(0, this.idxEnd)">
             <img src="{{ comic.url }}" alt="comic cover">
             <h4><a routerLink="/comics/{{comic.id}}"> {{ comic.title }} </a></h4>

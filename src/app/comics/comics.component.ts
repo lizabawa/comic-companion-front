@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { featured } from './featured-comic';
 import { ActivatedRoute } from '@angular/router';
 import { WebRequestService } from '../web-request.service';
 
@@ -9,7 +8,6 @@ import { WebRequestService } from '../web-request.service';
   styleUrls: ['./comics.component.css']
 })
 export class ComicsComponent implements OnInit {
-featured = featured;
 comicList: any;
 comic: any;
 

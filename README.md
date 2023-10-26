@@ -14,8 +14,8 @@ ComicCompanion is a mock portfolio website for a comic artist to display their w
 - [Resources & Acknowledgements](#resources--acknowledgements)
 
 ## Project Approach 
-- I used a project management application called Notion to keep track of project tasks, important links, and brainstorming ideas.
-- My approach to the project was the create a bare bone front end first, then the backend, and then connect the two.
+- I used the project management application [Notion](https://www.notion.so/) to keep track of project tasks, important links, and brainstorming ideas.
+- My approach to this project was to create a bare bone front end first, then the backend, and then connect the two before completing any additional CSS.
 - Before I began any coding, I planned my front-end out by creating a wireframe and user stories.
 
 

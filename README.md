@@ -49,8 +49,10 @@ ComicCompanion is a mock portfolio website for a comic artist to display their w
 ### Wireframes
 - Landing Page
 ![Landing Page Wireframe](https://github.com/lizabawa/comic-companion-front/blob/main/src/assets/wireframes/landing-wireframe.png?raw=true)
+<br>
 - Comic List Page
 ![Comic List Page Wireframe](https://github.com/lizabawa/comic-companion-front/blob/main/src/assets/wireframes/comic-list-wireframe.png?raw=true)
+<br>
 - Individual Comic Page
 ![Individual Comic Page Wireframe](https://github.com/lizabawa/comic-companion-front/blob/main/src/assets/wireframes/indiv-comic-wireframe.png?raw=true)
 

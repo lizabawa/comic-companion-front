@@ -20,6 +20,31 @@ ComicCompanion is a mock portfolio website for a comic artist to display their w
 
 
 ### User Stories
+<details open>
+<summary>Landing Page</summary>
+<br>
+- As a User, I should be able to click on the home or logo and be directed to the home page.
+<br>
+- As a User, I should be able to click on the “Comics” link in the the navigation and be directed to the comics page.
+<br>
+- As a User, I should be able to click on the social media icons and be redirected in a new tab to the  associated social media page.
+</details>
+<details open>
+<summary>Comics Page</summary>
+<br>
+- As a User, I should be able to clicked on the featured comic button and be directed to the featured comic
+<br>
+- As a User, I should be able to click on an individual comic image or title and be directed to the individual comics page
+</details>
+<details open>
+<summary>Individual Comics Page</summary>
+<br>
+- As a User, I should be able to click on the carousel left/right image and see the previous/next image
+<br>
+- As a User, I should be able to click on the back to the carousel top button and be redirected back to the top of the carousel
+</details>
+
+### Wireframe
 
 
 ## Tools and Technologies Used

@@ -23,12 +23,8 @@
 
 }
 
-.carousel-control-prev {
-background-color: blue;
-}
-
-.carousel-control-prev {
-
+::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
+    background-color: rgba(218, 218, 218, 0.244);
 }
 
 ::ng-deep .carousel-control-prev-icon, ::ng-deep .carousel-control-next-icon {

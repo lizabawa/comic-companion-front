@@ -95,3 +95,6 @@ These are the resources that were pivotal in debugging my code.
 - [Angular Documentation](https://angular.io/)
 - [NG Bootstrap](https://ng-bootstrap.github.io/#/home)
 - [Devstackr Youtube Video](https://www.youtube.com/watch?v=185uAxYz1dU)
+
+**Special Acknowledgement**
+- [MouthBreathersGuild](https://mouthbreathersguild.co/) - I'd like to especially thank MouthBreathersGuild for allowing me to use their artwork! Every image is from them and I could not have created such a great UI without it.
